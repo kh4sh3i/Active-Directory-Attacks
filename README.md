@@ -1,6 +1,8 @@
 # ActiveDirectory
 A curated list of awesome ActiveDirectory Pentesting resources
 
+<img src="bg.png" />
+
 ## [Bloodhound](https://github.com/BloodHoundAD/BloodHound)
 is an amazing tool which can enumerate a domain automatically, save all the information, find possible privilege escalation paths and show all the information using graphs.
 
@@ -58,7 +60,7 @@ Requirements:
 whoami /groups
 by default administrator user is not in Schema Admin and we should go to member of section and add current user to Schema admin group.
 ``` 
-<img src="" />
+<img src="./BadBlood.png" />
 
 * final call 
 ```
