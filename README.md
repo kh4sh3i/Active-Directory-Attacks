@@ -22,6 +22,24 @@ after execute neo4j you should reset password and after click on BloodHound.exe 
 by default BloodHound does not any data and you should use SHarpHound for gather information
 ```
 
+### DATA COLLECTION (ingestor)
+* [SharpHound](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors) SharpHound is the official data collector for BloodHound. It is written in C# and uses native Windows API functions and LDAP namespace functions to collect data from domain controllers and domain-joined Windows systems. 
+```
+C:\> SharpHound.exe
+```
+
+* [BloodHound.py](https://github.com/fox-it/BloodHound.py) If you have domain credentials you can run a python bloodhound ingestor from any platform so you don't need to depend on Windows.
+
+```
+pip3 install bloodhound
+bloodhound-python -u support -p 'yourpassword' -ns 10.10.10.192 -d blackfield.local -c all
+```
+
+
+
+
+
+
 ### Refrences
 https://github.com/chryzsh/awesome-bloodhound
 
