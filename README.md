@@ -35,6 +35,14 @@ pip3 install bloodhound
 bloodhound-python -u support -p 'yourpassword' -ns 10.10.10.192 -d blackfield.local -c all
 ```
 
+Tips:
+```
+after run above program they generate some json file of users,computers,domains,groups.
+we should import (drag& drop) all generated file into BloodHound GUI.
+with Analysis section in GUI we can find Bug in ActiveDirectory
+for exm: Find Shortest paths to Domain Admin, we can see user that can do Privileg esclation to dimain admin
+right click on every yal->Help->ABUSE : we can see how to use vuln in AD !
+```
 
 
 
@@ -42,4 +50,5 @@ bloodhound-python -u support -p 'yourpassword' -ns 10.10.10.192 -d blackfield.lo
 
 ### Refrences
 https://github.com/chryzsh/awesome-bloodhound
+https://book.hacktricks.xyz/windows-hardening/active-directory-methodology/bloodhound
 
