@@ -45,10 +45,32 @@ right click on every yal->Help->ABUSE : we can see how to use vuln in AD !
 ```
 
 
+## [BadBlood](https://github.com/davidprowe/BadBlood)
+this is make a Vuln ActiveDirectory, it usefull for pentester for hunting vuln. 
+
+Requirements:
+* Active Directory Powershell Installed
+ ```
+ Install-WindowsFeature RSAT-AD-PowerShell
+ ```
+* BadBlood is designed to be run with a user who is a Domain Admin and Schema Admin.
+```
+whoami /groups
+by default administrator user is not in Schema Admin and we should go to member of section and add current user to Schema admin group.
+``` 
+<img src="" />
+
+* final call 
+```
+git clone https://github.com/davidprowe/badblood.git
+./badblood/invoke-badblood.ps1
+```
 
 
 
 ### Refrences
-https://github.com/chryzsh/awesome-bloodhound
-https://book.hacktricks.xyz/windows-hardening/active-directory-methodology/bloodhound
+* https://github.com/chryzsh/awesome-bloodhound
+* https://book.hacktricks.xyz/windows-hardening/active-directory-methodology/bloodhound
+* https://www.secframe.com/badblood/
+* [install AD](https://computingforgeeks.com/how-to-install-active-directory-domain-services-in-windows-server/)
 
