@@ -60,7 +60,7 @@ Requirements:
 whoami /groups
 by default administrator user is not in Schema Admin and we should go to member of section and add current user to Schema admin group.
 ``` 
-<img src="img/BadBlood.png" />
+<img src="img/BadBlood.png" width="500px" />
 
 * final call 
 ```
