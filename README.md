@@ -1,5 +1,6 @@
-# ActiveDirectory
-A curated list of awesome ActiveDirectory Pentesting resources
+# Active Directory Attacks
+A curated list of awesome Active Directory Penetration Testing and attack resources
+
 
 <img src="img/bg.png" />
 
